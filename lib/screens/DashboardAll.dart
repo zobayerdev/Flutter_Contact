@@ -1,6 +1,5 @@
 // ignore_for_file: must_be_immutable
 import 'package:flutter/material.dart';
-import 'package:flutter_image/screens/AppBars.dart';
 import 'package:flutter_image/screens/RowColumn.dart';
 
 class DashboardAll extends StatelessWidget {
@@ -17,7 +16,7 @@ class DashboardAll extends StatelessWidget {
     "Bou♥♥♥"
   ];
   List<String> sim_and_time = [
-    "Airte",
+    "Airtel",
     "Gp",
     "Airtel",
     "Airtel",
@@ -35,7 +34,7 @@ class DashboardAll extends StatelessWidget {
           icon: const Icon(Icons.search_rounded),
           onPressed: () {},
         ),
-        title: const Text('Search contact & places'),
+        title: const Text('Search contact & places', style: TextStyle(fontSize: 20),),
         actions: [
           IconButton(
             onPressed: () {},
@@ -48,7 +47,7 @@ class DashboardAll extends StatelessWidget {
         ],
 
         elevation: 0,
-        centerTitle: true,
+        centerTitle: false,
         backgroundColor: Colors.purple,
         shape: const RoundedRectangleBorder(
           borderRadius: BorderRadius.vertical(
@@ -70,8 +69,8 @@ class DashboardAll extends StatelessWidget {
                 backgroundColor: Colors.amber,
                 child: Text(name[index][0]),
               ),
-              title: Text(name[index]),
-              subtitle: Text(sim_and_time[index]),
+              title: Text(name[index],style: const TextStyle(fontSize: 18.0),),
+              subtitle: Text(sim_and_time[index], style: const TextStyle(fontSize: 14.0),),
               trailing: IconButton(
                 onPressed: () {},
                 icon: const Icon(Icons.call),
