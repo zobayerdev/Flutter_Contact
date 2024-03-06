@@ -231,7 +231,7 @@ class FloatButton extends StatelessWidget {
       ),
 
       // #############################
-      // Boady
+      // Body
       body: Container(
         color: Colors.white,
         child: ListView.builder(
